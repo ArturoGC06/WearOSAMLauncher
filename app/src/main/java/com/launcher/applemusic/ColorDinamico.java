@@ -8,8 +8,8 @@ public class ColorDinamico extends Application {
 
 
     /**
-     *  dentro de la función onCreate se establecen los colores dinámicos
-      */
+     * dentro de la función onCreate se establecen los colores dinámicos
+     */
     @Override
     public void onCreate() {
         super.onCreate();
