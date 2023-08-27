@@ -1,4 +1,4 @@
-package com.aristidevs.androidmaster.firstapp
+package com.launcher.applemusic
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -9,12 +9,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
-import androidx.appcompat.widget.AppCompatEditText
-import com.aristidevs.androidmaster.R
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class FirstAppActivity : AppCompatActivity() {
 
