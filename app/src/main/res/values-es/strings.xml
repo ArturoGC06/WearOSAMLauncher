@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open">Abrir Apple Music</string>
+    <string name="alert_title">Apple Music no encontrado</string>
+    <string name="alert_message">Apple Music no está instalado, asegúrate de instalarlo siguiendo la guía.</string>
+    <string name="btn_ok">Abrir la guía</string>
+    <string name="btn_cancel">Cancelar</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Apple Music Launcher</string>
+    <string name="open">Open Apple Music</string>
+    <string name="alert_title">Apple Music not found</string>
+    <string name="alert_message">Apple Music is not installed, make sure to install it first following the guide.</string>
+    <string name="btn_ok">Open the guide</string>
+    <string name="btn_cancel">Cancel</string>
+</resources>
