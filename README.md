@@ -7,42 +7,30 @@ Apple Music crashes on start if you sideload it to a Wear OS device, unless you 
 
 ![Banner-Github](https://github.com/ArturoGC06/WearOSAMLauncher/assets/76574534/a175efca-1c89-4f55-aebd-a37378da8249)
 
-## How to install it:
+## How to install it using a phone (go [here](https://github.com/ArturoGC06/WearOSAMLauncher/blob/main/PC.md) if you want to use a PC):
 
 ### Prerequisites:
-- Your phone or a PC
+- Your phone
 - Download the latest WearOSAMLauncher APK from [releases page](https://github.com/ArturoGC06/WearOSAMLauncher/releases)
-- Download the latest Apple Music version from [APK Mirror](https://www.apkmirror.com/apk/apple/apple-music/) (make sure to dowload the APK, not the bundle)
-- Make sure that both the watch and the phone or PC are connected to the same Wifi network (you can force the watch to connect to Wifi turning off the Bluetooth from it)
-
-Depending on what device you are going to use to follow the guide:
-- [If you are going to use your phone] Download the [Bugjaeger app](https://play.google.com/store/apps/details?id=eu.sisik.hackendebug) on your phone
-- [If you are going to use your PC] Download the [Platform tools](https://developer.android.com/tools/releases/platform-tools#downloads) for your OS.
+- Download the latest Apple Music APK from [APK Mirror](https://www.apkmirror.com/apk/apple/apple-music/) (make sure to dowload the APK, not the bundle)
+- Download the [Bugjaeger app](https://play.google.com/store/apps/details?id=eu.sisik.hackendebug) on your phone
+- Make sure that both the watch and the phone are connected to the same Wifi network (you can force the watch to connect to Wifi turning off the Bluetooth from it)
 
 ### 1. Enable ADB debugging on the watch
 Open settings on the watch and scroll down to "About watch", then "Software info" and tap seven times on "Software version", then go back to settings main menu and at the bottom you will find a new option called "Developer settings", open them and scroll down until you find "ADB debugging", enable it and enable "Wifi debugging", once you enable it some text should appear on the same option, write down the last line that should be an IP adress, if it doesn't appear, make sure that your watch is connected to Wifi and try it again.
 
-### Continue using a PC: ([click here](https://github.com/ArturoGC06/WearOSAMLauncher) if you are going to use your phone)
 ### 2. Connect to the watch
-Extract the downloaded .zip file and open a command line there (make sure to open it in the folder that contains the adb programm). On the command window, type
-```cmd
-adb connect [IP ADRESS]
-```
-Where [IP ADRESS] is the previously noted IP adress from step 1. The command should be something similar to adb connect 192.168.1.50. The watch will prompt to allow debigging, tap "always from this computer".
+Open Bugjaeger on your phone, agree the terms when prompted and tap the plug icon with a + at the top right side of the screen. A window will appear with two fields, edit the one that says "192.168.0.1" with the previously noted IP adress from step 1 and tap "connect". The watch will prompt to allow debigging, tap "always from this computer".
 
 ### 3. Install the APKs
-Type
-```cmd
-adb install [PATH TO THE APK]
-```
-Where [PATH TO THE APK] is the path to the downloaded APKs (you can just swipe the APK to the command windows to copy its path), make sure to do it with both the WearOSAMLauncher you downloaded from [releases](https://github.com/ArturoGC06/WearOSAMLauncher/releases) and the Apple Music app you downloaded from [APK Mirror](https://www.apkmirror.com/apk/apple/apple-music/).
+Tap the third tab of the navigation bar in Bugjaeger (the one with a square icon and an arrow), then the + icon from the right down side of the screen, tap "Select APK file" when promped and select both the [WearOSAMLauncher APK](https://github.com/ArturoGC06/WearOSAMLauncher/releases) and the [Apple Music APK](https://www.apkmirror.com/apk/apple/apple-music/) and they will start installing, wait until it finishes.
 
 ### 4. Low the DPI to be able to log in
-Before opening Apple Music type 
+Before opening Apple Music, go back to the first tab of the navigation bar (the one with an icon with lines) and tap the <> icon ath the right down side of the screen. A console will appear, type
 ```cmd
-adb shell wm density 200
+wm density 210
 ```
-This will make everything smaller to be able to log in into Apple Music, but don't worry, we will set it back to the default size after loggin in.
+and press enter, this will make everything smaller to be able to log in into Apple Music, but don't worry, we will set it back to the default size after loggin in.
 
 ### 5. Open Apple Music and log in
 
@@ -50,7 +38,7 @@ Now open AMLauncher in the watch (the app you just installed with the watch icon
 
 You will notice that you can't accept the diagnostic dialog, but just swipe from the left border to the right to dimiss it. If a connection error is should, disable the watch bluetooth and make sure it's connect to either a Wifi network or mobile data.
 
-Then tap on the left button of the navigation bar, after that tap on the upper right side of the screen where the three dots should be (you might need to tap a couple of times until you find the button) and tap on "Settings", then "Log in".
+Then tap on the left button of the navigation bar, after that tap on the upper right side of the screen where the three dots should be (you might need to tap a couple of times until you find the button, if you still can't tap it, run the command in step 4 with a slightly higher DPI like 220 and keep trying) and tap on "Settings", then "Log in".
 
 ![Banner2 Github](https://github.com/ArturoGC06/WearOSAMLauncher/assets/76574534/cd33d68b-18d0-4b5a-a21f-174cf2d336fc)
 
@@ -60,9 +48,9 @@ You will see the log in menu off screen, but just scroll the text at the top tha
 
 Finally, type
 ```cmd
-adb shell wm density reset
+wm density reset
 ```
-To reset the DPI size and make everything look at its original size.
+on the console to reset the DPI size and make everything look at its original size.
 
 ### 6. Enjoy!
 
