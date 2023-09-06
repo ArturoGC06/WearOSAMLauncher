@@ -52,6 +52,8 @@ You will notice that you can't accept the diagnostic dialog, but just swipe from
 
 Then tap on the left button of the navigation bar, after that tap on the upper right side of the screen where the three dots should be (you might need to tap a couple of times until you find the button) and tap on "Settings", then "Log in".
 
+![Banner2 Github](https://github.com/ArturoGC06/WearOSAMLauncher/assets/76574534/cd33d68b-18d0-4b5a-a21f-174cf2d336fc)
+
 You will see the log in menu off screen, but just scroll the text at the top that says "Log in with your Apple ID" and you will see the fields to enter your ID and password, enter them and tap "Log in", then enter the verification code that should be sended to either your Apple devices or your phone via SMS.
 
 ### 5. Reset the DPI
@@ -68,7 +70,7 @@ You should now be able to use Apple Music on your Wear OS device, just open it a
 
 ### Things to keep in mind:
 - Apple Music will think you don't have internet if the watch is using the phone connection via bluetooth, it will only work if the watch is connected to either Wifi or mobile data, although you should be able to download your music to listen it without connection.
-- This has been tested on One UI Watch 4.5 Wear OS 3, One UI Watch 5 Wear OS 4 and stock Wear OS 4 and it works fine, although Wear OS 4 is known to have made the adb pairing process harder. Stock Wear OS 3 and Wear OS 2 are currently untested, but it should work fine on Wear OS 3.
+- This has been tested on One UI Watch 4.5 Wear OS 3, One UI Watch 5 Wear OS 4 and stock Wear OS 2, 3 and 4 and it works fine, although Wear OS 4 is known to have made the adb pairing process harder.
 - At least on One UI Watch, Apple Music will crash if you try to open the music player from the watchface. Control the music from the app itselft.
 - If you find any bug help me fix it by opening an issue at the repo reporting it.
 - If this app is useful to you, you might want to [buy me a cofee](https://paypal.me/agcarbajo1), I'll be very greatful!
